@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book Donation Form</title>
+</head>
+<body>
+    <h2>Book Donation Form: Details</h2>
+    <form action="Booksubmit_donation.php" method="post">
+        <fieldset>
+            <legend>Book Information</legend>
+            <label for="book_title">Book Title:</label>
+            <input type="text" id="book_title" name="book_title" required><br><br>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required><br><br>
+
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" name="genre" required><br><br>
+
+            <label for="condition">Condition:</label>
+            <select id="condition" name="condition" required>
+                <option value="">Select condition</option>
+                <option value="new">New</option>
+                <option value="good">Good</option>
+                <option value="fair">Fair</option>
+                <option value="poor">Poor</option>
+            </select><br><br>
+
+            <label for="donation_date">Donation Date:</label>
+            <input type="date" id="donation_date" name="donation_date" required><br><br>
+        </fieldset> 
+        <br>
+        <fieldset>
+            <legend>Donor Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="amount">Book Donation Amount:</label>
+        <input type="number" id="amount" name="amount" required><br><br>
+
+        <input type="submit" value="Donate">
+    </form>
+</body>
+</html>
