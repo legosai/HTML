@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Space Page</title>
+<style>    
+body {
+  background-color: darkblue;
+  background-image: linear-gradient(to bottom,darkblue,navy);
+  background-repeat: no-repeat;
+  background-position: top center;
+  font-family: Arial, sans-serif;
+}
+.pageheader {
+    background-image: linear-gradient(to right,purple,coral);
+    border-radius: 16px;
+    text-align: center;
+    color: white;
+}
+.fun-card {
+    background-color: midnightblue;
+    border-radius: 12px;
+    color: white;
+}
+.fun-card h2{
+    color:coral;
+}
+.star{
+    width: 60px;
+    height: 60px;
+    background-color:yellow ;
+    border-radius: 50%;
+    animation: twinkle 2s infinite alternate;
+}
+@keyframes twinkle {
+   from {background-color: yellow;  }
+   to { background-color: white;                              }
+    
+}
+.footer-text{
+      text-align: center;
+      color: coral;
+}
+</style>
+</head>
+<body>
+    <div class="page-header">
+     <h1>My Space Page</h1>
+     <p>Welcome to my corner of the galaxy!</p>
+    </div>
+    <div>  
+        <h2>Fun Fact</h2>
+        <p>The sun is  so big that 1 milion earths can fit inside it</p>
+    </div>
+    <div class="star"></div>
+    <p class="footer-text">Made by sai</p>
+</body>
+</html>
